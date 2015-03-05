@@ -9,12 +9,11 @@ PImage backgroundImage;
 void setup(){
 
 size( 1250, 900 );
-background(176,176,176);
+background(255,192,203);
 frameRate( 30 );
 
 backgroundImage = loadImage("image/Main_Menu.jpg");
 
-counter = loadFont("Counter-Strike");
 
 }
 
@@ -25,11 +24,6 @@ void draw()
 background(176,176,176);
 image(backgroundImage,0,0,1250,900);
 
-//Click the image! text 
-
- 	textFont(counter,100);
-	fill(0,0,0);
-	text("click the image!",350,100);
 
 //Background
 
@@ -51,7 +45,7 @@ image(backgroundImage,0,0,1250,900);
    		{
 			if (mouseX > 710 && mouseX < 1035 && mouseY > 295 && mouseY < 435)
 			{
-				link("Instruction.html");
+				link("How to.html");
 			}
 		}
 
@@ -71,7 +65,7 @@ image(backgroundImage,0,0,1250,900);
    		{
 			if (mouseX > 710 && mouseX < 1035 && mouseY > 625 && mouseY < 765)
 			{
-				link("welcome.html");
+				link("index.html");
 			}
 		}
 		
